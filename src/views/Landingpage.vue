@@ -1,11 +1,20 @@
 <template>
 <div class="landing-page">
+    <div class="nav-header">
+      <img
+        href=""
+        class="logo-img"
+        alt="Peloton.in Logo"
+        src="../assets/Logo.png"
+      />
+      <div class="nav_links">
+        <ul>
+          <li><a href="" class="logreg"><button>Login</button></a></li>
+          <li><a href="" class="logreg"><button>Register</button></a></li>
+        </ul>
+      </div>
+    </div>
     <div class="hero">
-    <header>
-        <img src="../assets/Logo.png" alt="" class="logo-img">
-        <a href="" class="logreg"><button>Login</button></a>
-        <a href="" class="logreg"><button>Register</button></a>    
-    </header>
     <section class="hero-section">
         <div class="container">
             <div class="row">

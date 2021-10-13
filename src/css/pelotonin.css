@@ -71,6 +71,9 @@ li, a, button {
 
 .nav__links {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 
 .nav__links li {
@@ -94,8 +97,30 @@ li, a, button {
   border-radius: 50px;
 }
 
+.nav_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  color: #FE0000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .notif-logout {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
 }
 
 .notif-logout li {
@@ -113,20 +138,29 @@ li, a, button {
   font-size: 20px;
 }
 
-header {
+.header {
+  padding: 30px 10%;
+  background-color: #D75432;
+}
+
+.header .just-end {
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: center;
-    padding: 30px 10%;
+}
+
+.header .just-end button p {
+  display: inline;
 }
 
 .logo-img {
     width: 20%;
     cursor: pointer;
     min-width: 150px;
+    
 }
 
-header button {
+.header button {
     padding: 9px 25px;
     background-color: #FE0000;
     border: none;
@@ -137,7 +171,7 @@ header button {
     min-width: 120px;
 }
 
-header button:hover {
+.header button:hover {
     background-color: #b32020;
 }
 

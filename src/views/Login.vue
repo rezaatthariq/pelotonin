@@ -1,17 +1,19 @@
 <template>
   <div>
-    <header>
+    <div class="nav-header">
       <img
         href=""
         class="logo-img"
         alt="Peloton.in Logo"
         src="../assets/Logo.png"
       />
-      <p class="nav-text">Don't have any account?</p>
-      <button class="">
-        <p>Register</p>
-      </button>
-    </header>
+      <div class="nav_links">
+        <ul>
+          <li><p class="nav-text">Don't have any account?</p></li>
+          <li><button class="">Register</button></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="container-login">
       <h1>Log In to Your Peloton.in Account</h1>
