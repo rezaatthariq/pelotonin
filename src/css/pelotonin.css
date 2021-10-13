@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CSS START HERE */
+li, a, button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo-img {
+    width: 20%;
+    margin-right: auto;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: #FE0000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 10px;
+    min-width: 120px;
+}
+
+header button:hover {
+    background-color: #b32020;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desc {
+  margin-left: 20%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.desc h1 {
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.desc p {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.desc button {
+    padding: 9px 25px;
+    background-color: #FE0000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 10px;
+    min-width: 120px;
+    text-align: center;
+}
+
+
+.nav-text {
+  padding-top: 17px;
+  padding-right: 10px;
+  font-size: 20;
+  color: #828282;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-login {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+
+
+.container-login .form-group {
+  margin: 20px;
+}
+
+.container-login .form-group label {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif ;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.container-login .form-group input {
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  border: #FE0000 solid 3px;
+  font-size: 20px;
+}
+
+.form-login .form-container {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.form-register .form-container {
+  margin-left: 0px;
+}
+
+.container-login h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif ;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 20x;
+}
+
+.form-register {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.form-login img {
+  margin-left: 20%;
+}
+
+.form-register img {
+  margin-left: 5%;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 10px;
+  min-width: 120px;
+}
+
+button:hover {
+  background-color: #b32020;
+}
+
+.btn-login {
+  margin: auto auto;
+  display: block;
+  min-width: 180px;
+  font-size: 20px;
+}
+
+#right-wheel, #left-wheel{
+  animation: wheel 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel{
+  from {
+    transform:  rotateZ(0deg);
+  }
+  to {
+    transform:  rotateZ(-360deg);
+  }
+}
+
+#awan {
+  animation: gerakawan 2s ease-in-out infinite alternate;
+}
+
+@keyframes gerakawan {
+  form {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+
+#aspal{
+  animation: gerakaspal 1s ease-in infinite;
+}
+
+@keyframes gerakaspal {
+  form {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+
+#head {
+  animation: gerak-head 1s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes gerak-head {
+  form {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-10deg);
+  }
+}
+
+.secone-content {
+  margin: auto auto;
+  width: 1200px;
+}
+
+.section-one .container {
+  
+}
+
+.section-one .container .kolom {
+  width: 400px;
+  display: inline-block;
+}
+
+.section-one .container .kolom .loop-preview {
+  width: 300px;
+  height: 400px;
+  margin: 20px auto 20px auto;
+  background-color: #FDD000;
+  border-radius: 30px;
+  border: #FDD000 solid;
+  padding: 20px;
+  box-shadow: -10px 10px 0px 3px #D75432;
+} 
+
+.section-one h1 {
+  padding-top: 20px ;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.section-two h1 {
+  padding-top: 20px ;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.section-three h1 {
+  padding-top: 40px ;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.section-one .deskripsi p {
+  padding: 20px;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  color: #FE0000;
+}
+
+.section-two p {
+  color: #FE0000;
+}
+
+.img-sec-two {
+  width: 70%;
+  margin-left: 10%;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.secthree-content {
+  margin: auto auto;
+  width: 1200px;
+}
+
+.column-3 {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.section-three .column-3 p {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: #FE0000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.howtoh1 {
+  padding-top: 20px ;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.img-howto {
+  width: 1200px;
+  margin: auto auto;
+  display: block;
+}
