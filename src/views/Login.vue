@@ -44,9 +44,7 @@
           </div>
         </div>
         <br>
-        <button class="btn-login">
-          <p>Login</p>
-        </button>
+        <button class="btn-login">Login</button>
       </form>
     </div>
   </div>

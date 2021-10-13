@@ -5,6 +5,7 @@ import landingpage from '../views/Landingpage.vue'
 import login from '../views/Login.vue'
 import register from '../views/Register.vue'
 import howto from '../views/HowTo.vue'
+import helpdesk from '../views/Helpdesk.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,11 @@ const routes = [
     path: '/howto',
     name: 'Howto',
     component: howto
+  },
+  {
+    path: '/helpdesk',
+    name: 'Helpdesk',
+    component: helpdesk
   },
   
 ]

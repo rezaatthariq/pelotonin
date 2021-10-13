@@ -62,6 +62,57 @@ li, a, button {
     text-decoration: none;
 }
 
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  color: #FE0000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav__links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: #FFFFFF;
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+}
+
+.notif-logout {
+  list-style: none;
+}
+
+.notif-logout li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.notif-logout i {
+  color: #000000;
+  font-size: 20px;
+}
+
+.notif-logout i:hover {
+  color: #FE0000;
+  font-size: 20px;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -71,7 +122,6 @@ header {
 
 .logo-img {
     width: 20%;
-    margin-right: auto;
     cursor: pointer;
     min-width: 150px;
 }
@@ -292,9 +342,6 @@ button:hover {
   width: 1200px;
 }
 
-.section-one .container {
-  
-}
 
 .section-one .container .kolom {
   width: 400px;
@@ -318,7 +365,7 @@ button:hover {
   text-align: center;
   font-size: 40px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .section-two h1 {
@@ -399,3 +446,37 @@ button:hover {
   margin: auto auto;
   display: block;
 }
+
+.helpdesk .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.helpdesk .container p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif ;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.helpdesk .container .message {
+  width: 100%;
+  border-radius: 10px;
+  border: #FE0000 solid 3px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.helpdesk .container .message:hover {
+  border: #b32020 solid 3px;
+}
+
+.btn-submit {
+  margin-top: 15px;
+  margin-left: auto;
+  display: block;
+  min-width: 150px;
+  font-size: 18px;
+}
+
