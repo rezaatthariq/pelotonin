@@ -62,6 +62,23 @@ li, a, button {
     text-decoration: none;
 }
 
+.btn-pelotonin {
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  min-width: 120px;
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+} 
+
+button:hover {
+  background-color: #b32020;
+}
+
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -88,9 +105,25 @@ li, a, button {
   font-size: 20px;
 }
 
+.nav__links li button {
+  border-style: none;
+  background-color: #FFFFFF;
+}
+
 .nav__links li a:hover {
   transition: all 0.3s ease 0s;
   color: #FFFFFF;
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+}
+
+.notif-logout .btn-logout {
+  transition: all 0.3s ease 0s;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
   padding: 9px 25px;
   background-color: #FE0000;
   border: none;
@@ -109,10 +142,10 @@ li, a, button {
   padding: 0px 10px;
 }
 
+
 .nav_links li a {
   transition: all 0.3s ease 0s;
-  color: #FE0000;
-  font-weight: bold;
+  color: #FFFFFF;
   font-size: 20px;
 }
 
@@ -293,20 +326,7 @@ li, a, button {
   margin-left: 5%;
 }
 
-button {
-  padding: 9px 25px;
-  background-color: #FE0000;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  margin-right: 10px;
-  min-width: 120px;
-}
 
-button:hover {
-  background-color: #b32020;
-}
 
 .btn-login {
   margin: auto auto;
@@ -512,5 +532,13 @@ button:hover {
   display: block;
   min-width: 150px;
   font-size: 18px;
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 10px;
+  font-weight: bold;
 }
 

@@ -5,15 +5,27 @@
         <img src="../assets/Logo.png" alt="" class="logo-img">
         <nav>
             <ul class="nav__links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">How To</a></li>
+                <li>
+                    <button>
+                        <router-link :to="{name: 'home'}">Home</router-link>    
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <router-link :to="{name: 'profile'}">Profile</router-link>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <router-link :to="{name: 'howto'}">How To</router-link>
+                    </button>
+                </li>
             </ul> 
         </nav>
         <nav>
             <ul class="notif-logout">
                 <li><a class="notif" href=""><i class="fa fa-bell"></i></a></li>
-                <li><a href="" class="logout"><button>Logout</button></a></li>
+                <li><a @click="logout" href="" class="btn-logout">Logout</a></li>
             </ul>
         </nav>
     </div>
@@ -22,7 +34,34 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  
+//   data(){
+//       return{
+//           token: localStorage.getItem("token"),
+//       };
+//   },
+//   methods: {
+//       showHome() {
+//           this.$emit("","home");
+//       },
+//       showProfile() {
+//           this.$emit("", "profile");
+//       },
+//       showHowTo() {
+//           this.$emit("", "howto");
+//       },
+//       logout() {
+//           axios
+//             .get("api/logout", {
+//                 headers: {Authorizaion: "Bearer " + this.token},
+//             })
+//             .then(() => {
+//                 localStorage.removeItem("token");
+//                 this.$router.push("login")
+//             });
+//       },
+//   },
 };
 </script>
 

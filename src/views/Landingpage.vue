@@ -9,8 +9,16 @@
       />
       <div class="nav_links">
         <ul>
-          <li><a href="" class="logreg"><button>Login</button></a></li>
-          <li><a href="" class="logreg"><button>Register</button></a></li>
+          <li>
+            <button class="btn-pelotonin">
+                <router-link :to="{name: 'login'}">Login</router-link>
+            </button>
+          </li>
+          <li>
+            <button class="btn-pelotonin">
+                <router-link :to="{name: 'register'}">Register</router-link>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -22,7 +30,10 @@
                 <div class="desc">
                     <h1>This is the best experience you'll ever have</h1><br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, sequi?</p>
-                    <br><a href="" class="btn-getstarted"><button>Get Started</button></a>
+                    <br><a href="" class="btn-getstarted">
+                        <button>
+                            <router-link :to="{name: 'Howto'}">How to Peloton ?</router-link>
+                        </button></a>
                 </div>  
             </div>
             <div class="column">
@@ -182,12 +193,23 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import landingpage from '@/components/HelloWorld.vue'
+
+// import Logo from "../../images/Logo.png";
+// import Negatifcard from "../../images/negatifcard.png";
+// import Teamdev from "../../images/teamdev.png";
 
 export default {
   name: "Landingpage",
-  components: {},
+  components: {
+
+  },
+  data() {
+      return {
+        //   Logo: Logo,
+        //   Negatifcard: Negatifcard,
+        //   Teamdev: Teamdev
+      }
+  },
 };
 </script>
 

@@ -9,8 +9,16 @@
       />
       <div class="nav_links">
         <ul>
-          <li><a href="" class="logreg"><button>Login</button></a></li>
-          <li><a href="" class="logreg"><button>Register</button></a></li>
+          <li>
+            <button class="btn-pelotonin">
+                <router-link :to="{name: 'login'}">Login</router-link>
+            </button>
+          </li>
+          <li>
+            <button class="btn-pelotonin">
+                <router-link :to="{name: 'register'}">Register</router-link>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -23,11 +31,18 @@
 </template>
 
 <script>
+// import Logo from "../../images/Logo.png"
+
 export default {
   name: "Howto",
   components: {
 
   },
+  // data() {
+  //   return {
+  //     Logo: Logo,
+  //   };
+  // }
 };
 </script>
 

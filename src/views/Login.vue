@@ -10,14 +10,21 @@
       <div class="nav_links">
         <ul>
           <li><p class="nav-text">Don't have any account?</p></li>
-          <li><button class="">Register</button></li>
+          <li>
+            <button class="btn-pelotonin">
+              <router-link :to="{name: 'register'}">Register</router-link>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="container-login">
       <h1>Log In to Your Peloton.in Account</h1>
-      <form class="form-login">
+      <form 
+        action="#" @submit.prevent="login" 
+        class="form-login">
+        <p> {{ message }} </p>
         <div class="row">
           <div class="column">
             <div class="form-container">
@@ -28,7 +35,11 @@
                   class="form-control"
                   id="emailaddress"
                   placeholder="Enter your email address"
-                /><br />
+                  
+                />
+                <!-- v-model="loginForm.email"
+                  required -->
+                <br />
               </div>
               <div class="form-group">
                 <label for="password">Password</label><br />
@@ -37,7 +48,10 @@
                   class="form-control"
                   id="password"
                   placeholder="Enter your password"
+                  
                 />
+                <!-- v-model="loginForm.password"
+                  required -->
               </div>
             </div>
           </div>
@@ -46,16 +60,46 @@
           </div>
         </div>
         <br>
-        <button class="btn-login">Login</button>
+        <button style="margin: auto auto" class="btn-pelotonin">Login</button>
       </form>
     </div>
   </div>
 </template>
 
 <script>
+// import Logo from "../../images/Logo.png"
+
 export default {
   name: "Login",
-  components: {},
+  components: {
+
+  },
+  // data() {
+  //   return {
+  //     message: "",
+  //     Logo: Logo,
+  //     loginForm: {
+  //       email: "",
+  //       password: "",
+  //     },
+  //   };
+  // },
+  // methods: {
+  //   login() {
+  //     this.message = "Please wait..."
+  //     axios.get("/sanctum/csrf-cookie").then((response) => {
+  //       axios
+  //         .post("api/login", this.loginForm)
+  //         .then((response) => {
+  //           localstorage.setItem("token", response.data.token);
+  //           this.$router.push("home");
+  //         })
+  //         .catch(() =>{
+  //           this.message = "Wrong email or Password!";
+  //         });
+  //     });
+  //   },
+  // },
 };
 </script>
 
