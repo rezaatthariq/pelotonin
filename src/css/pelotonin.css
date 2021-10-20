@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,43 +11,49 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* CSS START HERE */
+
 li, a, button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
 .btn-pelotonin {
@@ -73,24 +67,28 @@ li, a, button {
   font-weight: bold;
   display: block;
   font-size: 20px;
-} 
+}
 
 button:hover {
   background-color: #b32020;
 }
 
 .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  position: fixed;
+  background-color: #FFFFFF;
+  border-bottom: #FE0000 solid 5px;
 }
+
 
 .nav__links {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .nav__links li {
@@ -134,7 +132,7 @@ button:hover {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .nav_links li {
@@ -142,18 +140,22 @@ button:hover {
   padding: 0px 10px;
 }
 
-
 .nav_links li a {
   transition: all 0.3s ease 0s;
   color: #FFFFFF;
   font-size: 20px;
 }
 
+.nav_links i {
+  color: #D75432;
+  font-size: 30px;
+}
+
 .notif-logout {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .notif-logout li {
@@ -177,9 +179,9 @@ button:hover {
 }
 
 .header .just-end {
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header .just-end button p {
@@ -187,28 +189,35 @@ button:hover {
 }
 
 .logo-img {
-    width: 20%;
-    cursor: pointer;
-    min-width: 150px;
-    
+  width: 20%;
+  cursor: pointer;
+  min-width: 150px;
 }
 
 .header button {
-    padding: 9px 25px;
-    background-color: #FE0000;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-right: 10px;
-    min-width: 120px;
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 10px;
+  min-width: 120px;
 }
 
 .header button:hover {
-    background-color: #b32020;
+  background-color: #b32020;
 }
 
+.container {
+  width: 100%;
+  padding-top: 100px;
+}
+
+
 .hero-section {
+  padding-top: 5%;
+  background-color: #FDD000;
   width: 100%;
 }
 
@@ -230,29 +239,27 @@ button:hover {
 }
 
 .desc h1 {
-    font-size: 60px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
 }
 
 .desc p {
-    font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
-    
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .desc button {
-    padding: 9px 25px;
-    background-color: #FE0000;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-right: 10px;
-    min-width: 120px;
-    text-align: center;
+  padding: 9px 25px;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 10px;
+  min-width: 120px;
+  text-align: center;
 }
-
 
 .nav-text {
   padding-top: 17px;
@@ -263,16 +270,15 @@ button:hover {
 }
 
 .container-login {
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #C4C4C4;
-    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.25);
-  }
-
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
 
 .container-login .form-group {
   margin: 20px;
@@ -280,7 +286,7 @@ button:hover {
 
 .container-login .form-group label {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif ;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   padding-bottom: 10px;
   font-weight: bold;
@@ -306,7 +312,7 @@ button:hover {
 .container-login h1 {
   text-align: center;
   font-size: 36px;
-  font-family: 'Open Sans', sans-serif ;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
   font-weight: bold;
   margin-bottom: 2px;
@@ -326,8 +332,6 @@ button:hover {
   margin-left: 5%;
 }
 
-
-
 .btn-login {
   margin: auto auto;
   display: block;
@@ -335,18 +339,18 @@ button:hover {
   font-size: 20px;
 }
 
-#right-wheel, #left-wheel{
+#right-wheel, #left-wheel {
   animation: wheel 3s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-@keyframes wheel{
+@keyframes wheel {
   from {
-    transform:  rotateZ(0deg);
+      transform: rotateZ(0deg);
   }
   to {
-    transform:  rotateZ(-360deg);
+      transform: rotateZ(-360deg);
   }
 }
 
@@ -356,23 +360,23 @@ button:hover {
 
 @keyframes gerakawan {
   form {
-    transform: translateX(0%)
+      transform: translateX(0%)
   }
   to {
-    transform: translateX(5%);
+      transform: translateX(5%);
   }
 }
 
-#aspal{
+#aspal {
   animation: gerakaspal 1s ease-in infinite;
 }
 
 @keyframes gerakaspal {
   form {
-    transform: translateX(0%)
+      transform: translateX(0%)
   }
   to {
-    transform: translateX(10%);
+      transform: translateX(10%);
   }
 }
 
@@ -384,10 +388,10 @@ button:hover {
 
 @keyframes gerak-head {
   form {
-    transform: rotateZ(0deg);
+      transform: rotateZ(0deg);
   }
   to {
-    transform: rotateZ(-10deg);
+      transform: rotateZ(-10deg);
   }
 }
 
@@ -396,25 +400,36 @@ button:hover {
   width: 1200px;
 }
 
-
-.section-one .container .kolom {
-  width: 400px;
+.section-one .kolom {
+  width: 300px;
   display: inline-block;
 }
 
-.section-one .container .kolom .loop-preview {
+.section-one .loop-preview {
   width: 300px;
-  height: 400px;
+  height: fit-content;
   margin: 20px auto 20px auto;
   background-color: #FDD000;
   border-radius: 30px;
   border: #FDD000 solid;
   padding: 20px;
   box-shadow: -10px 10px 0px 3px #D75432;
-} 
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-one .loop-pvw {
+  border-radius: 30px;
+  margin-bottom: 20px;
+  width: 245px;
+  height: 225px;
+  padding: 5px;
+  display: block;
+}
 
 .section-one h1 {
-  padding-top: 20px ;
+  padding-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 40px;
@@ -423,8 +438,7 @@ button:hover {
 }
 
 .section-two h1 {
-  padding-top: 20px ;
-  margin-bottom: 30px;
+  padding-top: 20px;
   text-align: center;
   font-size: 40px;
   font-family: 'Open Sans', sans-serif;
@@ -432,15 +446,17 @@ button:hover {
 }
 
 .section-three h1 {
-  padding-top: 40px ;
-  margin-bottom: 30px;
+  padding-top: 40px;
   text-align: center;
+  margin-bottom: 40px;
   font-size: 40px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
 
 .section-one .deskripsi p {
+  display: inline-block;
+  margin-top: 30px;
   padding: 20px;
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
@@ -465,18 +481,17 @@ button:hover {
   width: 1200px;
 }
 
-.column-3 {
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-
 .section-three .column-3 p {
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-weight: bolder;
   color: #FE0000;
+}
+
+.section-three .img-teamdev {
+  width: 1000px;
+  margin-left: 5%;
 }
 
 .navbar {
@@ -487,7 +502,7 @@ button:hover {
 }
 
 .howtoh1 {
-  padding-top: 20px ;
+  padding-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 40px;
@@ -502,13 +517,12 @@ button:hover {
 }
 
 .helpdesk .container {
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
 }
 
 .helpdesk .container p {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif ;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 10px;
   font-weight: bold;
   margin-top: 10px;
@@ -541,4 +555,143 @@ button:hover {
   margin-right: 10px;
   font-weight: bold;
 }
+
+.page-header {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px 5% 20px 5%;
+  align-items: center;
+  width: 100%;
+}
+
+.page h1 {
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.page-content {
+  padding: 20px 5% 20px 5%;
+  width: 100%;
+  
+}
+
+.page-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.peloton-list {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  border: black solid 2px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.peloton-list h2 {
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+.peloton-list i {
+  font-size: 30px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.peloton-list i, p {
+  display: inline-block;
+}
+
+.page-content .row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.page-content .row input {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: #000000 solid 2px;
+}
+
+.page-content .row textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: #000000 solid 2px;
+}
+
+.page-content .row p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.column-10 {
+  display: inline-block;
+  width: 100%;
+}
+
+.column-9 {
+  display: inline-block;
+  width: 90%;
+}
+
+.column-8 {
+  display: inline-block;
+  width: 80%;
+}
+
+.column-7 {
+  display: inline-block;
+  width: 70%;
+}
+
+.column-6 {
+  display: inline-block;
+  width: 60%;
+}
+
+.column-5 {
+  display: inline-block;
+  width: 50%;
+}
+
+.column-4 {
+  display: inline-block;
+  width: 40%;
+}
+
+.column-3 {
+  display: inline-block;
+  width: 30%;
+}
+
+.column-2 {
+  display: inline-block;
+  width: 20%;
+}
+
+.column-1 {
+  display: inline-block;
+  width: 10%;
+}
+
+
+
+
+
 

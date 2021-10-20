@@ -9,6 +9,7 @@
         <p>Message</p>
         <textarea rows="13" id="msg" class="message"></textarea>
         <button style="margin-left : auto; margin-top : 20px" class="btn-pelotonin">Send</button>
+        <br><br><br><br><br><br><br><br>
     </div>
 </div>
 </template>
