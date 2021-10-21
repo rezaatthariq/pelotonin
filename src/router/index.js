@@ -8,6 +8,11 @@ import howto from '../views/HowTo.vue'
 import helpdesk from '../views/Helpdesk.vue'
 import createpeloton from '../views/CreatePeloton.vue'
 import editpeloton from '../views/EditPeloton.vue'
+import editprofile from '../views/EditProfile.vue'
+import pelotondetailsownernotdone from '../views/PelotonDetailsOwnerNotDone.vue'
+import pelotondetailsnotjoined from '../views/PelotonDetailsNotJoined.vue'
+import pelotondetailsdone from '../views/PelotonDetailsDone.vue'
+import pelotondetailsnotdone from '../views/PelotonDetailsNotDone.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +64,31 @@ const routes = [
     path: '/editpeloton',
     name: 'EditPeloton',
     component: editpeloton
+  },
+  {
+    path: '/editprofile',
+    name: 'EditProfilen',
+    component: editprofile
+  },
+  {
+    path: '/pelotondetailsownernotdone',
+    name: 'PelotonDetailsOwnerNotDone',
+    component: pelotondetailsownernotdone
+  },
+  {
+    path: '/pelotondetailsnotjoined',
+    name: 'PelotonDetailsNotJoined',
+    component: pelotondetailsnotjoined
+  },
+  {
+    path: '/pelotondetailsdone',
+    name: 'PelotonDetailsDone',
+    component: pelotondetailsdone
+  },
+  {
+    path: '/pelotondetailsnotdone',
+    name: 'PelotonDetailsNotDone',
+    component: pelotondetailsnotdone
   },
   
 ]

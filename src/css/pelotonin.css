@@ -690,8 +690,97 @@ button:hover {
   width: 10%;
 }
 
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
 
+.profile-top li, a {
+  color: #000000;
+}
 
+.foto-profile{
+  width: 184px;
+  height: 184px;
+  border-radius: 100px;
+  border: #000000 solid 2px;
+}
 
+.profile-top p1 {
+  font-size: 144px;
+}
 
+.profile-top p2 {
+  font-size: 48px;
+  font-weight: bold;
+}
 
+.profile-form p1 {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #FE0000;
+  margin-left: 1%;
+}
+
+.profile-form p2 {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: #000000 solid 2px;
+}
+
+.profile-form .row  {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-form label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.profile-form .row input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: #000000 solid 2px;
+}
+
+hr  {
+  border: #000000 solid 2px;
+  margin-bottom: 5px;
+}
+
+.peloton-details .details-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.peloton-details img {
+  display: flex;
+  width: 70%;
+  height: 40%;
+  margin: auto auto;
+  border-radius: 20px;
+  border: #FFFFFF solid 5px;
+}
+
+.peloton-details {
+  margin-top: -3%;
+}
